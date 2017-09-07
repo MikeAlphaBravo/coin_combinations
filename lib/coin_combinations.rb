@@ -33,11 +33,15 @@ class SmallChange
 
     return coin_array
 
-    # coin_array(25,10,5,1)
-    # puts "#{quarter}"
-    # return "#{dime}"
-    # return "#{nickle}"
-    # return "#{penny}"
-    # in the end we may need to build our code as originally planned with the remainders pushing to their own array.  Utilizing that array to pull out our coin counts.
+    # counts = Hash.new(0)
+    # coin_arry.each { |coin| counts[coin] += 1 }
+
+    # coin_arry.each do |coin|
+    #   counts[coin] = counts[coin] + 1
+    # end
+
+    # return coin_array
+    # can't get hash return our array of total for coin count
+
   end
 end
