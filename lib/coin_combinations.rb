@@ -1,5 +1,7 @@
 class SmallChange
-
+  # def initialize(amount)
+  #   @amount = amount
+  # end
   def coin_combinations(amount)
 
     quarter = 25
@@ -8,8 +10,6 @@ class SmallChange
     penny = 1
 
     coin_array = []
-
-    change_left_over = amount
 
     while (amount >= 25)
       amount -= 25
@@ -33,19 +33,11 @@ class SmallChange
 
     return coin_array
 
+    # coin_array(25,10,5,1)
+    # puts "#{quarter}"
+    # return "#{dime}"
+    # return "#{nickle}"
+    # return "#{penny}"
+    # in the end we may need to build our code as originally planned with the remainders pushing to their own array.  Utilizing that array to pull out our coin counts.
   end
-end
-
-
-
-    if
-      first_change = amount % 25
-    else
-      first_change > 0
-
-    second_change = first_change % 10
-    third_change = second_change % 5
-    final_change = third_change % 1
-  end
-
 end
